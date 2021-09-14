@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=di, initial-scale=1.0">
+    <title>Document</title>
+    <source>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="js/browseView.js"></script>
+    <script src="js/homepageView.js"></script>
+    <script src="js/modelView.js"></script>
+    <script>
+        updateView ();
+
+        function updateView(){
+            if(model.app.currentPage == 'vote') updateViewVotePage();
+            if(model.app.currentPage == 'options') updateViewOptionsPage();
+        }
+    </script>
+</body>
+</html>
