@@ -3,22 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=di, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <source>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app"></div>
-    <script src="js/browseView.js"></script>
-    <script src="js/homepageView.js"></script>
-    <script src="js/modelView.js"></script>
-    <script>
-        updateView ();
-
-        function updateView(){
-            if(model.app.currentPage == 'vote') updateViewVotePage();
-            if(model.app.currentPage == 'options') updateViewOptionsPage();
-        }
-    </script>
+    <script src="homepageView.js"></script>
+    <script src="view.js"></script>
 </body>
 </html>
